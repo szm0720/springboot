@@ -1,4 +1,6 @@
-package com.redis.normal.common;
+package com.redis.normal.enums;
+
+import com.redis.normal.common.ICodeMsg;
 
 /**
  * 码值对应的模块枚举

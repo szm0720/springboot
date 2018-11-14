@@ -1,4 +1,8 @@
-package com.redis.normal.common;
+package com.redis.normal.enums;
+
+import com.redis.normal.modal.vo.CodeMsgVo;
+import com.redis.normal.common.ICode;
+
 /**
  * 交易码枚举值
  *

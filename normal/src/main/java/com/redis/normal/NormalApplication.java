@@ -13,9 +13,9 @@ import tk.mybatis.spring.annotation.MapperScan;
 @ServletComponentScan
 @MapperScan("com.redis.normal.mapper")
 
-public class CommonApplication {
+public class NormalApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CommonApplication.class, args);
+        SpringApplication.run(NormalApplication.class, args);
     }
 }

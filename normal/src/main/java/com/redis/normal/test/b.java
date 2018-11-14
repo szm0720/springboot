@@ -1,4 +1,4 @@
-package com.redis.normal;
+package com.redis.normal.test;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;

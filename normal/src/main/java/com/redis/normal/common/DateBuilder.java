@@ -503,6 +503,5 @@ public class DateBuilder {
 	public static void main(String[] args) {
 		System.out.println(toDayEndStr(new Date()));
 		System.out.println(toDayBeginStr(new Date()));
-
 	}
 }

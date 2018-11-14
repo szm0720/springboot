@@ -1,4 +1,6 @@
 package com.redis.normal.common;
+import com.redis.normal.enums.CodeEnum;
+
 import java.io.Serializable;
 
 /**

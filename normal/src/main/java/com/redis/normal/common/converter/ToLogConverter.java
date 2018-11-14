@@ -1,4 +1,5 @@
-package com.redis.normal.common;
+package com.redis.normal.common.converter;
+
 import com.redis.normal.modal.dto.InterfaceToLogDTO;
 import com.redis.normal.modal.from.InterfaceToLog;
 import org.springframework.beans.BeanUtils;

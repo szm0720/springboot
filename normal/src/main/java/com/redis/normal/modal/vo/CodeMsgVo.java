@@ -1,4 +1,8 @@
-package com.redis.normal.common;
+package com.redis.normal.modal.vo;
+
+import com.redis.normal.common.ICode;
+import com.redis.normal.common.ICodeMsg;
+import com.redis.normal.enums.CodeEnum;
 
 /**
  * 返回码提示信息VO

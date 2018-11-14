@@ -1,4 +1,4 @@
-package com.redis.normal.common;
+package com.redis.normal.common.converter;
 
 /**
  * 转换器工厂类
@@ -12,19 +12,17 @@ public class ConverterFactory {
      * tolog转换器
      */
     private static final ToLogConverter toLogConverter = new ToLogConverter();
-
-
-
     /**
-     * @return formLogConverter
      * @param
+     * @return formLogConverter
      */
     public static FormLogConverter createFromConverter() {
         return formLogConverter;
     }
+
     /**
-     * @return toLogConverter
      * @param
+     * @return toLogConverter
      */
     public static ToLogConverter createToConverter() {
         return toLogConverter;

@@ -1,6 +1,5 @@
 package com.redis.normal.config;
 
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -31,10 +30,10 @@ public class Swagger2 {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("云鸟开发平台使用Swagger2构建RESTful APIs")
-                .description("更多资源请关注：http://open.yunniao.cn")
-                .termsOfServiceUrl("http://open.yunniao.cn")
-                .contact("yunniao-api")
+                .title("开发平台使用Swagger2构建RESTful APIs")
+                .description("更多资源请关注：http://www.google.com")
+                .termsOfServiceUrl("http://www.google.com")
+                .contact("api")
                 .version("1.0")
                 .build();
 

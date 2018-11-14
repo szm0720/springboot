@@ -1,4 +1,4 @@
-package com.redis.normal.common;
+package com.redis.normal.common.converter;
 /**
  * 装换器接口
  * @param <S> 来源类型
