@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yunniao.sparrow.core.mapper.log.InterfaceFromLogMapper">
+    <!-- 查询日志列表-->
+    <select id="selectFromLogTotalList" resultType="com.redis.normal.modal.dto.InterfaceFromLogDTO">
+        SELECT f.id,1 as callType,f.app_key as appKey,f.third_id as thirdId,f.app_code,f.platform as platform,f.interface_info as interfaceinfo,f.request_message as requestMessage,f.state,
+        f.response_message as responseMessage,f.retry_count as retryCount,
+        f.response_time as responseTime,f.request_time as requestTime,f.interface_url as interfaceUrl,
+        f.create_time as createTime,f.update_time as updateTime FROM interface_from_log f
+        where 1=1
+        <if test="appKey != null and appKey != ''">
+            AND  f.app_key = #{appKey}
+        </if>
+        <if test="state != null">
+            AND  f.state = #{state}
+        </if>
+        <if test="startTime !=null and startTime !='' ">
+            <![CDATA[ and f.create_time  >=  #{startTime}  ]]>
+        </if>
+        <if test="endTime !=null and endTime!='' "  >
+            <![CDATA[ and f.create_time <=  #{endTime}  ]]>
+        </if>
+        UNION ALL
+        SELECT t.id,2 as callType,t.app_key as appKey,t.third_id as thirdId,t.app_code,t.platform as platform,t.interface_info as interfaceinfo,t.request_message as requestMessage,t.state,
+        t.response_message as responseMessage,t.retry_count as retryCount,
+        t.response_time as responseTime,t.request_time as requestTime,t.interface_url as interfaceUrl,
+        t.create_time as createTime,t.update_time as updateTime FROM interface_to_log t
+        where 1=1
+        <if test="appKey != null and appKey != ''">
+            AND  t.app_key = #{appKey}
+        </if>
+        <if test="state != null">
+            AND  t.state = #{state}
+        </if>
+        <if test="startTime !=null and startTime !='' ">
+            <![CDATA[ and t.create_time  >=  #{startTime}  ]]>
+        </if>
+        <if test="endTime !=null and endTime!='' "  >
+            <![CDATA[ and t.create_time <=  #{endTime}  ]]>
+        </if>
+    </select>
+    <!-- 查询日志列表-->
+    <select id="selectFromLogList" resultType="com.redis.normal.modal.dto.InterfaceFromLogDTO">
+        SELECT id,1 as callType,app_key as appKey,third_id as thirdId,app_code,platform as platform,interface_info as interfaceinfo,request_message as requestMessage,state,
+        response_message as responseMessage,retry_count as retryCount,
+        response_time as responseTime,request_time as requestTime,interface_url as interfaceUrl,
+        create_time as createTime,update_time as updateTime FROM interface_from_log
+        where 1=1
+        <if test="appKey != null and appKey != ''">
+            AND  app_key = #{appKey}
+        </if>
+        <if test="state != null">
+            AND  state = #{state}
+        </if>
+        <if test="startTime !=null and startTime !='' ">
+            <![CDATA[ and create_time  >=  #{startTime}  ]]>
+        </if>
+        <if test="endTime !=null and endTime!='' "  >
+            <![CDATA[ and create_time <=  #{endTime}  ]]>
+        </if>
+        order by create_time desc
+    </select>
+</mapper>

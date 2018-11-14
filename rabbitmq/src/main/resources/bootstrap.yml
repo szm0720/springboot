@@ -1,0 +1,38 @@
+server:
+  port: 9004
+
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: false
+        service-id: config
+  application:
+    name: springboot_rabbitmq
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+#    virtual-host: /
+#    template:
+#      exchange: mq
+
+#  rabbitmq: #m1环境
+#    host: 5672.mq.m1.yn.cn
+#    port: 5672
+#    username: firmiana_domain_proxy
+#    password: zQu1RJadgCdfaQs
+#    virtual-host: firmiana
+#    template:
+#      exchange: firmiana
+
+  rabbitmq: #d1环境
+    host: 5672.mq.d1.yn.cn
+    port: 5672
+    username: yunniao
+    password: yunniao.me
+    virtual-host: firmiana
+    template:
+      exchange: firmiana
+
