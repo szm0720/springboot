@@ -11,7 +11,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
 @ServletComponentScan
-@MapperScan("com.redis.normal.mapper")
+@MapperScan({"com.redis.normal.mapper","com.redis.normal.generatecode.mapper"})
 
 public class NormalApplication {
 

@@ -12,7 +12,7 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
 /**
- * @Author: ybbdhfhv
+ * @Author:
  * @Date: 2018/7/5 09:58
  * @Description:
  */

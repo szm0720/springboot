@@ -1,4 +1,4 @@
-package com.me.constants;
+package com.redis.normal.generatecode.constants;
 
 /**
  * @Author:

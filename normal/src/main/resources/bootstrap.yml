@@ -9,6 +9,10 @@ spring:
     username: root
     password: 123456789
 
+  cloud:
+    config:
+      enabled: false  #Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/configserver/default/master":Connection refused; nested exception is java.net.ConnectException: Connection refused
+
 
 mybatis:
-  mapper-locations: "classpath*:mapper/*Mapper.xml"
+  mapper-locations: classpath:mapper/*Mapper.xml
