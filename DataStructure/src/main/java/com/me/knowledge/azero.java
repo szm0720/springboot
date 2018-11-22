@@ -43,15 +43,15 @@ public class azero {
         new String();
         new StringBuffer();
         new StringBuilder();
-        CharSequence();
+//        CharSequence();
         /**02. Java异常系列         (共3篇)*/
 
         /** 03. Java 时间日期系列 (共7篇)*/
-        Calendar;
+       /* Calendar;
         Date;
         DateFormat;
         Locale;
-        TimeZone();
+        TimeZone();*/
         /**  04. java io系列              (共26篇)*/
         new FileInputStream("");
         /** 05, Java 集合系列        (共18篇)*/
