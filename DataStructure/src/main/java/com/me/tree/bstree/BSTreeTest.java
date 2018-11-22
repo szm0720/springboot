@@ -7,6 +7,15 @@ package com.me.tree.bstree;
  **/
 public class BSTreeTest {
 
+
+    /**
+     *      1
+     *        5
+     *       4 6
+     *      3
+     *     2
+     * */
+
     private static final int arr[] = {1,5,4,3,2,6};
 
     public static void main(String[] args) {

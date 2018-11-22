@@ -5,9 +5,12 @@ spring:
   application:
     name: normal
   datasource:
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF8
-    username: root
-    password: 123456789
+    #url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF8
+    #username: root
+    #password: 123456789
+    url: jdbc:mysql://beeper_platform_engine.write.3306.mysql.d1.yn.cn:3306/firmiana_domain_customer?useUnicode=true&characterEncoding=UTF8
+    username: ynapp
+    password: ynapppass
 
   cloud:
     config:

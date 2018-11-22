@@ -28,10 +28,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * Created by Mr.AG
- * Date: 17/1/13
- * Time: 15:13
- * Version 1.0.0
+ *
  */
 public abstract class BaseBiz<M extends Mapper<T>, T> {
 
