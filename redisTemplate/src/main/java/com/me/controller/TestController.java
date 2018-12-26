@@ -1,4 +1,4 @@
-package com.redis.controller;
+package com.me.controller;
 
 import com.redis.util.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;

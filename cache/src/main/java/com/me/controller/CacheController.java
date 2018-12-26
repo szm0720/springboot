@@ -1,4 +1,4 @@
-package com.redis.controller;
+package com.me.controller;
 
 import com.redis.modal.form.JwtBssForm;
 import com.redis.service.CacheService;

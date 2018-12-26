@@ -1,4 +1,4 @@
-package com.redis.controller;
+package com.me.controller;
 
 import com.redis.two.JedisUtil;
 import org.springframework.context.annotation.Import;

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: SpringSessionRedis
+  redis:
+    host: 39.96.3.201
+    port: 6379
+    database: 0
+server:
+  port: 9009

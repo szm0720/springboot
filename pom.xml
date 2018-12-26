@@ -10,12 +10,16 @@
         <module>rabbitmq</module>
         <module>cache</module>
         <module>mysql</module>
-        <module>oauth2</module>
+        <module>SpringSecurityOauth2</module>
         <module>shiro_jwt</module>
         <module>shiro</module>
         <module>DataStructure</module>
         <module>DesignPatterns</module>
         <module>normal</module>
+        <module>guava_start</module>
+        <module>SpringSessionRedis</module>
+        <module>jwt</module>
+        <module>oauth2</module>
     </modules>
 
     <parent>
